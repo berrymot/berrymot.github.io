@@ -1,15 +1,15 @@
 :root {
   --purp: #5319e7;
-  --gray: #808080;
-  --fg: #111;
-  --bg: #eee;
+  --gray: #ccc;
+  --fg: #000;
+  --bg: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --purp: #ace618;
-    --fg: #eee;
-    --bg: #111;
+    --fg: #fff;
+    --bg: #000;
   }
 }
 
@@ -29,6 +29,8 @@ body {
 }
 pre, code, samp {
   font-family: "noto sans mono", monospace;
+  background: var(--gray);
+  padding: 0 4px;
 }
 
 a {
