@@ -1,0 +1,59 @@
+:root {
+  --purp: #5319e7;
+  --gray: #808080;
+  --fg: #111;
+  --bg: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #eee;
+    --bg: #111;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 60ch;
+  margin: 0 auto;
+  padding: 8px;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+:not(pre, code, samp) {
+  font-family: "noto sans", sans-serif !important;
+}
+pre, code, samp {
+  font-family: "noto sans mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: var(--purp);
+}
+a:hover {
+  border-bottom: 1px solid var(--purp);
+}
+
+ul {
+  list-style-type: disc;
+}
+dt {
+  font-weight: bold;
+}
+dl.lex dd {
+  font-style: italic;
+}
+::marker, dt {
+  color: var(--purp);
+}
+
+.sc {
+  font-variant: small-caps;
+}
+.gr {
+  color: var(--gray);
+}
