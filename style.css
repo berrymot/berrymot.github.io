@@ -8,6 +8,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --purp: #ace618;
+    --gray: #444;
     --fg: #fff;
     --bg: #000;
   }
