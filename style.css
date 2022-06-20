@@ -66,19 +66,6 @@ dl.lex dd {
   color: var(--gray);
 }
 
-input[type=checkbox] {
-  appearance: none;
-  background: var(--bg);
-  border: 1px solid var(--fg);
-  width: 10px;
-  height: 10px;
-  position: relative;
-  top: 3px;
-}
-input[type=checkbox]:checked {
-  background: var(--purp);
-}
-
 .scr {
   overflow-x: auto;
 }
