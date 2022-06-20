@@ -7,6 +7,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --purp: #ace618;
     --fg: #eee;
     --bg: #111;
   }
@@ -47,7 +48,8 @@ dt {
 dl.lex dd {
   font-style: italic;
 }
-::marker, dt {
+
+::marker, dt, legend {
   color: var(--purp);
 }
 
