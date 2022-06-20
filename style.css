@@ -59,3 +59,12 @@ dl.lex dd {
 .gr {
   color: var(--gray);
 }
+
+input[type=checkbox] {
+  appearance: none;
+  background: var(--bg);
+  border: 1px solid var(--fg);
+}
+input[type=checkbox]:checked {
+  background: var(--purp);
+}
