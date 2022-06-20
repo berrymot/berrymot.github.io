@@ -32,6 +32,9 @@ pre, code, samp {
   background: var(--gray);
   padding: 0 4px;
 }
+pre {
+  overflow-x: auto;
+}
 
 a {
   text-decoration: none;
@@ -69,4 +72,12 @@ input[type=checkbox] {
 }
 input[type=checkbox]:checked {
   background: var(--purp);
+}
+
+.scr {
+  overflow-x: auto;
+}
+
+table {
+  white-space: nowrap;
 }
