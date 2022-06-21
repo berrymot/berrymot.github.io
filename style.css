@@ -91,7 +91,6 @@ th, td {
 }
 th {
   color: var(--purp);
-  background: var(--gray);
 }
 
 iframe {
