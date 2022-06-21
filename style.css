@@ -87,9 +87,11 @@ table {
 th, td {
   text-align: center;
   padding: 4px;
+  border: 1px solid var(--fg);
 }
 th {
   color: var(--purp);
+  background: var(--gray);
 }
 
 iframe {
