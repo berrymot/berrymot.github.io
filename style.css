@@ -2,6 +2,7 @@
   --purp: #5319e7;
   --red: #b60205;
   --green: #0e8a16;
+  --gray: #00000040;
   --fg: #000;
   --bg: #fff;
 }
@@ -11,6 +12,7 @@
     --purp: #8c4bff;
     --red: #dc3722;
     --green: #0e8a16; /* somehow the contrast still checks out */
+    --gray: #ffffff40;
     --fg: #fff;
     --bg: #000;
   }
@@ -65,7 +67,7 @@ dl.lex dd {
   font-variant: small-caps;
 }
 .gr {
-  opacity: 0.25;
+  color: var(--gray);
 }
 del {
   color: var(--red);
