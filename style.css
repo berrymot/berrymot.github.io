@@ -73,3 +73,7 @@ dl.lex dd {
 table {
   white-space: nowrap;
 }
+
+iframe {
+  display: block; /* heck you */
+}
