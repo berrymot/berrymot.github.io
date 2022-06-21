@@ -51,7 +51,7 @@
       selected.push(all[i]); // adds selected series to list
     }
     let series = selected[Math.floor(Math.random() * selected.length)]; // picks a random one
-    let season = Math.floor(Math.random() * series.length) + 1; // a random index of `n[series]`
+    let season = Math.floor(Math.random() * n[series].length) + 1; // a random index of `n[series]`
     let episode = Math.floor(Math.random() * (n[series][season - 1] - 1)) + 1; // just pain
   }
     
