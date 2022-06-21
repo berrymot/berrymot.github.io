@@ -11,14 +11,13 @@
     <input type=checkbox id=tas name=tas /> <label for=tas>tas</label> <br/>
     <input type=checkbox id=tng name=tng /> <label for=tng>tng</label> <br/>
     <input type=checkbox id=dsn name=dsn /> <label for=dsn>dsn</label> <br/>
-    <input type=checkbox id=voy name=voy /> <label for=voy>voyager</label> <br/>
-    <input type=checkbox id=ent name=ent /> <label for=ent>enterprise</label> <br/>
-    <input type=checkbox id=dis name=dis /> <label for=dis>discovery</label> <br/>
-    <input type=checkbox id=pic name=pic /> <label for=pic>picard</label> <br/>
-    <input type=checkbox id=ld name=ld /> <label for=ld>lower decks</label> <br/>
-    <input type=checkbox id=pro name=pro /> <label for=pro>prodigy</label> <br/>
+    <input type=checkbox id=voy name=voy /> <label for=voy>voy</label> <br/>
+    <input type=checkbox id=ent name=ent /> <label for=ent>ent</label> <br/>
+    <input type=checkbox id=dis name=dis /> <label for=dis>dis</label> <br/>
+    <input type=checkbox id=pic name=pic /> <label for=pic>pic</label> <br/>
+    <input type=checkbox id=ld name=ld /> <label for=ld>ld</label> <br/>
+    <input type=checkbox id=pro name=pro /> <label for=pro>pro</label> <br/>
     <input type=checkbox id=snw name=snw /> <label for=snw>snw</label> <br/>
-    <input type=checkbox id=st name=st /> <label for=st>short treks</label> <br/>
     <input type=submit value=do />
   </fieldset>
 </form>
@@ -48,5 +47,5 @@
   let season = Math.floor(Math.random() * n[series].length) + 1; // a random index of `n[series]`
   let episode = Math.floor(Math.random() * (n[series][season - 1] - 1)) + 1; // just pain 
   
-  document.getElementById("h").textContent = "you should watch " + series + "s"+season + "e"+episode + ".";
+  document.getElementById("h").textContent = "you should watch " + series + " s"+season + "e"+episode + ".";
 </script>
