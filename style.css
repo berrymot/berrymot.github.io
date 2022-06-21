@@ -42,7 +42,7 @@ a {
   color: var(--purp);
 }
 a:hover {
-  border-bottom: 1px solid var(--purp);
+  text-decoration: underline;
 }
 
 ul {
@@ -64,6 +64,12 @@ dl.lex dd {
 }
 .gr {
   color: var(--gray);
+}
+del {
+  color: #b60205;
+}
+ins {
+  color: #0e8a16;
 }
 
 .scr {
