@@ -1,5 +1,7 @@
 :root {
   --purp: #5319e7;
+  --red: #b60205;
+  --green: #0e8a16;
   --gray: #ccc;
   --fg: #000;
   --bg: #fff;
@@ -7,7 +9,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --purp: #ace618;
+    --purp: #8c4bff;
+    --red: #dc3722;
+    --green: #0e8a16; /* somehow the contrast still checks out */
     --gray: #444;
     --fg: #fff;
     --bg: #000;
@@ -66,10 +70,10 @@ dl.lex dd {
   color: var(--gray);
 }
 del {
-  color: #b60205;
+  color: var(--red);
 }
 ins {
-  color: #0e8a16;
+  color: var(--green);
 }
 
 .scr {
