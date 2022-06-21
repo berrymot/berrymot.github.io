@@ -43,7 +43,7 @@
     return decodeURIComponent(window.location.search.substring(1).split("&").map(function(p) { return p.split("=") }).filter(function(p) { return p[0] == v }).map(function(p) { return decodeURIComponent(p[1]) }).pop());
   }
   
-  let selected = n.keys().filter(v => q(v) == "on");
+  let selected = Object.keys(n).filter(v => q(v) == "on");
   let series = selected[Math.floor(Math.random() * selected.length)]; // picks a random one
   let season = Math.floor(Math.random() * n[series].length) + 1; // a random index of `n[series]`
   let episode = Math.floor(Math.random() * (n[series][season - 1] - 1)) + 1; // just pain 
