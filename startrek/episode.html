@@ -45,7 +45,7 @@
   let selected = Object.keys(n).filter(v => q(v) == "on");
   let series = selected[Math.floor(Math.random() * selected.length)]; // picks a random one
   let season = Math.floor(Math.random() * n[series].length) + 1; // a random index of `n[series]`
-  let episode = Math.floor(Math.random() * (n[series][season - 1] - 1)) + 1; // just pain 
+  let episode = Math.floor(Math.random() * (n[series][season - 1] - 1)) + 2; // just pain 
   
   document.getElementById("h").textContent = "you should watch " + series + " s"+season + "e"+episode + ".";
 </script>
