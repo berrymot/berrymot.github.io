@@ -9,6 +9,7 @@
   
   var freq = {};
   
+  // find
   for (var i = 0; i < words.length; i++) { // words
     for (var j = 0; j < words[i].length; j++ ) { // letters
       var l = words[i].charAt(j);
@@ -20,5 +21,12 @@
     }
   }
   
-  document.getElementById("out").innerText = JSON.stringify(freq, undefined, 2);
+  // sort
+  var ar = [];
+  for (var l of Object.keys(freq)) {
+    ar.push([l, freq[l]]);
+  }
+  ar.sort((a, b) => a[1] - b[1]);
+  
+  document.getElementById("out").innerText = ar.map(a => a[0] + ": " + a[1]).join("\n");
 </script>
