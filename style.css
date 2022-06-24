@@ -30,10 +30,10 @@ body {
 }
 
 :not(pre, code, samp) {
-  font-family: "noto sans", sans-serif !important;
+  font-family: "noto sans", "arial", sans-serif !important;
 }
 pre, code, samp {
-  font-family: "noto sans mono", monospace;
+  font-family: "noto sans mono", "courier new", monospace;
   background: var(--gray);
   padding: 0 4px;
 }
