@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <h1>kalnau letter frequency</h1>
-<pre id=out></pre>
+<p id=out></p>
 
 <script>
   let words = ["om", "sat", "fo", "lim", "sen", "kan", "yac", "sil", "kal", "kalnau", "dan", "san", "mav", "alb", "mol", "ton", "wen", "ben", "tol", "wel", "bel", "tof", "wef", "bef", "tow", "wa", "wib", "wis", "wid", "we", "wif", "wil", "asr", "sun", "lun", "yas", "cent", "mama", "mer", "der", "cer", "aly", "mra", "kima", "lon", "mab", "kat", "mara", "na", "no", "ne", "nui", "kroko", "yam", "awey", "tac", "lan", "tan", "ilun", "ikc", "sol", /* particles */ "a", "pi'", "ci'", "wi'", "fi'", "i", "ic", "o", "la'", "ta'", "il", "sa'", "ka", "ak", /* affixes */ "ti", "te", "to", "tu", "al", "u", "pi", "ni", "fi", "wi", "ki", "fi", "ki", "la", "ta", "il", "sa", "bi"];
@@ -28,5 +28,5 @@
   }
   ar.sort((a, b) => a[1] - b[1]);
   
-  document.getElementById("out").innerText = ar.map(a => a[0] + ": " + a[1]).join("\n");
+  document.getElementById("out").innerHTML = ar.map(a => a[0] + "&#9;" + a[1]).join("<br />");
 </script>
