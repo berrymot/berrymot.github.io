@@ -1,0 +1,24 @@
+<link href="../../style.css" rel=stylesheet />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<h1>kalnau letter frequency</h1>
+<pre id=out></pre>
+
+<script>
+  let words = ["om", "sat", "fo", "lim", "sen", "kan", "yac", "sil", "kal", "kalnau", "dan", "san", "mav", "alb", "mol", "ton", "wen", "ben", "tol", "wel", "bel", "tof", "wef", "bef", "tow", "wa", "wib", "wis", "wid", "we", "wif", "wil", "asr", "sun", "lun", "yas", "cent", "mama", "mer", "der", "cer", "aly", "mra", "kima", "lon", "mab", "kat", "mara", "na", "no", "ne", "nui", "kroko", "yam", "awey", "tac", "lan", "tan", "ilun", "ikc", "sol", /* particles */ "a", "pi'", "ci'", "wi'", "fi'", "i", "ic", "o", "la'", "ta'", "il", "sa'", "ka", "ak", /* affixes */ "ti", "te", "to", "tu", "al", "u", "pi", "ni", "fi", "wi", "ki", "fi", "ki", "la", "ta", "il", "sa", "bi"];
+  
+  var freq = {};
+  
+  for (var i = 0; i < words.length; i++) { // words
+    for (var j = 0; j < words[i].length; j++ ) { // letters
+      var l = words[i].charAt(j);
+      if (freq[l] == undefined) {
+        freq[l] = 0;
+      } else {
+        freq[l] += 1;
+      }
+    }
+  }
+  
+  document.getElementById("out").innerText = JSON.stringify(freq, undefined, 2);
+</script>
