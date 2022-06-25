@@ -2,7 +2,8 @@
   --purp: #5319e7;
   --red: #b60205;
   --green: #0e8a16;
-  --gray: #00000040;
+  --grfg: #ccc;
+  --grbg: #eee;
   --fg: #000;
   --bg: #fff;
 }
@@ -12,7 +13,8 @@
     --purp: #8c4bff;
     --red: #dc3722;
     --green: #0e8a16; /* somehow the contrast still checks out */
-    --gray: #ffffff40;
+    --grfg: #444;
+    --grbg: #111;
     --fg: #fff;
     --bg: #000;
   }
@@ -34,7 +36,7 @@ body {
 }
 pre, code, samp {
   font-family: "noto sans mono", "courier new", monospace;
-  background: var(--gray);
+  background: var(--grbg);
   padding: 0 4px;
 }
 pre {
@@ -67,7 +69,7 @@ dl.lex dd {
   font-variant: small-caps;
 }
 .gr {
-  color: var(--gray);
+  color: var(--grfg);
 }
 del {
   color: var(--red);
@@ -91,6 +93,7 @@ th, td {
 }
 th {
   color: var(--purp);
+  background: var(--grbg);
 }
 
 iframe {
