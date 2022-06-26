@@ -2,8 +2,8 @@
   --purp: #5319e7;
   --red: #b60205;
   --green: #0e8a16;
-  --grfg: #ccc;
-  --grbg: #eee;
+  --grfg: #777;
+  --grbg: #ccc;
   --fg: #000;
   --bg: #fff;
 }
@@ -13,8 +13,8 @@
     --purp: #8c4bff;
     --red: #dc3722;
     --green: #0e8a16; /* somehow the contrast still checks out */
-    --grfg: #444;
-    --grbg: #111;
+    --grfg: #888;
+    --grbg: #333;
     --fg: #fff;
     --bg: #000;
   }
