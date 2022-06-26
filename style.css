@@ -36,7 +36,6 @@ body {
 }
 pre, code, samp {
   font-family: "noto sans mono", "courier new", monospace;
-  background: var(--grbg);
   padding: 0 4px;
 }
 pre {
@@ -85,6 +84,7 @@ ins {
 table {
   white-space: nowrap;
   border-collapse: collapse;
+  margin-bottom: 8px;
 }
 th, td {
   text-align: center;
@@ -94,6 +94,9 @@ th, td {
 th {
   color: var(--purp);
   background: var(--grbg);
+}
+td.nb {
+  border: none;
 }
 
 iframe {
