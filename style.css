@@ -36,7 +36,6 @@ body {
 }
 pre, code, samp {
   font-family: "noto sans mono", "courier new", monospace;
-  padding: 0 4px;
 }
 pre {
   overflow-x: auto;
