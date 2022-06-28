@@ -1,0 +1,40 @@
+<link href="../../style.css" rel=stylesheet />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  tr:first-child th {
+    position: sticky;
+    top: 0;
+  }
+  :is(th, td).r {
+    transform: rotate(180deg);
+  }
+  :is(th, td).r span {
+    writing-mode: vertical-rl;
+  } 
+</style>
+
+<h1>the geologic time scale</h1>
+<p>prepare for <span class=sc>giant html table</span>. :)</p>
+<p>(sorry about the colors, btw, this is the official color scheme i promise)</p>
+
+<!-- oh shit here we go -->
+<div class=scr>
+  <table>
+    <tr>
+      <th class=r><span>eon</span></th>
+      <th class=r><span>era</span></th>
+      <th class=r><span>period</span></th>
+      <th colspan=2>epoch</th>
+      <th>age</th>
+      <th>start</th>
+    </tr>
+    <tr>
+      <td class=r rowspan=102 style="background:#9ad9dd"><span>phanerozoic</span></td>
+      <td class=r rowspan=24 style="background:#f2f91d"><span>cenozoic</span></td>
+      <td class=r rowspan=7 style="background:#f9f97f"><span>quaternary</span></td>
+      <td rowspan=3 style="background:#feebd2">holocene</td>
+      <td style="background:#fdedec"><span class=sc>u/l</span></td>
+      <td style="background:#fdedec">meghalayan</td>
+    </tr>
+  </table>
+</div>
