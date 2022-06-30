@@ -6,7 +6,7 @@
 
 <script>
   let voicings = ["voiced", "voiceless"];
-  let places = ["labial", "orbicular", "coronal", "dental", "alveolar", "retroflex", "dorsal", "palatal", "velar", "uvular", "laryngeal", "pharyngeal", "epiglottal", "glottal"];
+  let places = ["labial", "orbicular", "coronal", "dental", "alveolar", "flex", "dorsal", "palatal", "velar", "uvular", "laryngeal", "pharyngeal", "epiglottal", "glottal"];
   let manners = ["nasal", "stop", "plosive", "affricate", "fricative", "vowel", "approximant", "trill", "tap", "flap", "rhotic", "liquid", "occlusive", "obstruent", "sonorant", "continuant", "lateral", "vibrant", "implosive", "click", "ejective"];
   let prefixes = ["semi", "bi", "tri", "labio", "orbicu", "linguo", "corono", "dento", "alveo", "retro", "dorso", "palato", "velo", "uvulo", "glotto", "naso", "latero", "", "", "", ""];
   
@@ -16,7 +16,7 @@
   function prefix() {
     var s = "";
     let n = Math.floor(Math.random() * 4);
-    for (int i = 0; i < n; i++) {
+    for (var i = 0; i < n; i++) {
       s += random(prefixes);
     }
     return s;
