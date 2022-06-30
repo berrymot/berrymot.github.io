@@ -1,0 +1,18 @@
+<link href="../style.css" rel=stylesheet />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<h1>phonemes that hopefully don't exist</h1>
+<p id=the></p>
+
+<script>
+  let voicings = ["voiced", "voiceless"];
+  let places = ["labial", "orbicular", "coronal", "dental", "alveolar", "retroflex", "dorsal", "palatal", "velar", "uvular", "laryngeal", "pharyngeal", "epiglottal", "glottal"];
+  let manners = ["nasal", "stop", "plosive", "affricate", "fricative", "vowel", "approximant", "trill", "tap", "flap", "rhotic", "liquid", "occlusive", "obstruent", "sonorant", "continuant", "lateral", "vibrant", "implosive", "click", "ejective"];
+  let prefixes = ["semi", "bi", "tri", "labio", "orbicu", "linguo", "corono", "dento", "alveo", "retro", "dorso", "palato", "velo", "uvulo", "glotto", "naso", "latero", "", "", "", ""];
+  
+  function random(a) {
+    return a[Math.floor(Math.random() * a.length)];
+  }
+  
+  document.getElementById("the").textContent = random(voicings) + " " + random(prefixes) + random(places) + " " + random(prefixes) + random(manners);
+</script>
