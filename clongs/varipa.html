@@ -1,0 +1,37 @@
+<link href="../../style.css" rel=stylesheet />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<h1>the varipa</h2>
+<p>ipa extension made by epic friend. kind of a canipa ripoff. and it has a cool ascii thing.</p>
+<!-- put link to image -->
+
+<fieldset>
+  <legend>ascii thing converter</legend>
+  <input type=text id=varat oninput="cvt()" /><br/>
+  <input disabled id=the />
+</fieldset>
+
+<script>
+  // thanks stackoverflow
+  function replace(str, findArray, replaceArray) {
+    var i, regex = [], map = {};
+    for (i = 0; i < findArray.length; i++) { 
+      regex.push(findArray[i].replace(/([-[\]{}()*+?.\\^$|#,])/g,'\\$1'));
+      map[findArray[i]] = replaceArray[i]; 
+    }
+    regex = regex.join('|');
+    str = str.replace(new RegExp(regex, 'g'), function(matched) {
+      return map[matched];
+    });
+    return str;
+  }
+  
+  function cvt() {
+    document.getElementById("the").value = replace(
+      document.getElementById("varat").value,
+      /* unicode stuff */
+      ["Bn", "Mn", "!n"],
+      ["m",  "ɱ",  "μ"]
+    );
+  }
+</script>
