@@ -1,120 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		:root {
-	--purp: #5319e7;
-	--red: #b60205;
-	--green: #0e8a16;
-	--grbg: #ccc;
-	--fg: #000;
-	--bg: #fff;
-  }
-  
-  @media (prefers-color-scheme: dark) {
-	:root {
-	  --purp: #8c4bff;
-	  --red: #dc3722;
-	  --green: #0e8a16; /* somehow the contrast still checks out */
-	  --grbg: #333;
-	  --fg: #fff;
-	  --bg: #000;
-	}
-  }
-  
-  * {
-	box-sizing: border-box;
-  }
-  body {
-	max-width: 60ch;
-	margin: 0 auto;
-	padding: 8px;
-	color: var(--fg);
-	background: var(--bg);
-  }
-  
-  :not(pre, code, samp) {
-	font-family: "noto sans", "arial", sans-serif !important;
-  }
-  pre, code, samp {
-	font-family: "noto sans mono", "courier new", monospace;
-  }
-  pre {
-	overflow-x: auto;
-  }
-  
-  a {
-	text-decoration: none;
-	color: var(--purp);
-  }
-  a:hover {
-	text-decoration: underline;
-  }
-  
-  ul {
-	list-style-type: disc;
-  }
-  dt {
-	font-weight: bold;
-  }
-  dl.lex dd {
-	font-style: italic;
-  }
-  
-  /* ::marker, */ dt, legend {
-	color: var(--purp);
-  }
-  
-  .sc {
-	font-variant: small-caps;
-  }
-  del {
-	color: var(--red);
-  }
-  ins {
-	color: var(--green);
-  }
-  
-  .scr {
-	overflow-x: auto;
-  }
-  
-  table {
-	border-collapse: collapse;
-	margin-bottom: 8px;
-  }
-  th, td {
-	text-align: center;
-	padding: 4px;
-	border: 1px solid var(--fg);
-  }
-  th {
-	color: var(--purp);
-	background: var(--grbg);
-  }
-  td.nb {
-	border: none;
-  }
-  
-  iframe {
-	display: block; /* heck you */
-  }
-	</style>
-	<title>kalnau</title>
-</head>
-<body>
-	<h1>kalnau</h1>
-	
-	<h2>phon/orth</h2>
-	<p>
-		Pronunciations for both classical and simplified registers are given.
-	</p>
-	<div>
-	<table>
-		<tr>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../../style.css" rel=stylesheet />
+
+<h1>kalnau</h1>
+<p>clong created by me &amp; firecubez</p>
+
+<h2>phon/orth</h2>
+<p>pronunciations for both classical and simplified registers are given.</p>
+
+<div class=scr>
+  <table>
+    <tr>
 			<td class="nb"></td>
 			<th>labial</th>
 			<th>alveolar</th>
@@ -132,7 +27,7 @@
 			<td></td>
 		</tr>
 		<tr>
-		<th>stop</th>
+		<th>plosive</th>
 		<td>p</td>
 		<td colspan="2">t, d</td>
 		<td>simplified: k /k/</td>
@@ -157,9 +52,9 @@
 		<td></td>
 		</tr>
 	</table>
-	</div>
+</div>
 
-	<div class=scr>
+<div class=scr>
 	<table>
 		<tr>
 		<td class=nb></td>
@@ -181,34 +76,31 @@
 		<td colspan="2">a /ɐ/</td>
 		</tr>
 	</table>
-	</div>
+</div>
 
-	<h2>phonotactics</h2>
-	<p>
-		Syllable structure: <code>(C)(C)V(V)(C)(C)</code>
-	</p>
+<h2>phonotactics</h2>
+<p>syllable structure: <code>(C)(C)V(V)(C)(C)</code></p>
+<p>double letters are pronounced with a glottal stop in between.</p>
 
-	<p>Double letters are pronounced with a glottal stop in between.</p>
-
-	<h3>Disallowed consonant clusters</h3>
-	Onset:
+<h3>disallowed consonant clusters</h3>
+<p>onset:
 	<ul>
-		<li>(mn) p</li>
-		<li>(plosive) (plosive)</li>
-		<li>sz</li><li>zs</li>
+		<li>a nasal followed by /p/</li>
+		<li>two consecutive plosives<li>
+		<li>/sz/ or /zs/</li>
 	</ul>
+</p>
 
-	Coda:
+<p>coda:
 	<ul>
-		<li>(consonant) '</li>
-		<li>(consonant) w</li>
-		<li>td</li><li>dt</li>
-		<li>kg</li><li>gk</li>
-		<li>sz</li><li>zs</li>
-		<li>cr</li><li>rc</li>
+		<li>consonant followed by /ʔ/ or /w/</li>
+		<li>&lt;td, dt, kg, gk, sz, zs, cr, rc></li>
 	</li>
+</p>
 
-	<h2>vocabulary</h2>
+<h2>vocabulary</h2>
+<p>IN intransitive as verb, TR transitive as verb, * modifier-default.</p>
+<div class=scr>
 	<table>
 		<tr>
 			<th>word</th>
@@ -271,7 +163,7 @@
 			<td>language</td>
 			<td>to localize, to translate</td>
 			<td>language</td>
-			<td>klingon <em>Hol</em> "????"</td>
+			<td>klingon <em>Hol</em> "language"</td>
 		</tr>
 		<tr>
 			<td>IN: kalnau</td>
@@ -557,7 +449,7 @@
 			<td>IN: nu</td>
 			<td>this, that</td>
 			<td>to do this/that</td>
-			<td>this, that<td>
+			<td>this, that</td>
 			<td>a priori</td>
 		</tr>
 		<tr>
@@ -655,5 +547,4 @@
 			<td>japanese <em>dan</em> "step, rank"</td>
 		</tr>
 	</table>
-</body>
-</html>
+</div>
