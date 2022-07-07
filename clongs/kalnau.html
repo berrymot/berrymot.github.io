@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		:root {
+	--purp: #5319e7;
+	--red: #b60205;
+	--green: #0e8a16;
+	--grbg: #ccc;
+	--fg: #000;
+	--bg: #fff;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+	:root {
+	  --purp: #8c4bff;
+	  --red: #dc3722;
+	  --green: #0e8a16; /* somehow the contrast still checks out */
+	  --grbg: #333;
+	  --fg: #fff;
+	  --bg: #000;
+	}
+  }
+  
+  * {
+	box-sizing: border-box;
+  }
+  body {
+	max-width: 60ch;
+	margin: 0 auto;
+	padding: 8px;
+	color: var(--fg);
+	background: var(--bg);
+  }
+  
+  :not(pre, code, samp) {
+	font-family: "noto sans", "arial", sans-serif !important;
+  }
+  pre, code, samp {
+	font-family: "noto sans mono", "courier new", monospace;
+  }
+  pre {
+	overflow-x: auto;
+  }
+  
+  a {
+	text-decoration: none;
+	color: var(--purp);
+  }
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  ul {
+	list-style-type: disc;
+  }
+  dt {
+	font-weight: bold;
+  }
+  dl.lex dd {
+	font-style: italic;
+  }
+  
+  /* ::marker, */ dt, legend {
+	color: var(--purp);
+  }
+  
+  .sc {
+	font-variant: small-caps;
+  }
+  del {
+	color: var(--red);
+  }
+  ins {
+	color: var(--green);
+  }
+  
+  .scr {
+	overflow-x: auto;
+  }
+  
+  table {
+	border-collapse: collapse;
+	margin-bottom: 8px;
+  }
+  th, td {
+	text-align: center;
+	padding: 4px;
+	border: 1px solid var(--fg);
+  }
+  th {
+	color: var(--purp);
+	background: var(--grbg);
+  }
+  td.nb {
+	border: none;
+  }
+  
+  iframe {
+	display: block; /* heck you */
+  }
+	</style>
+	<title>kalnau</title>
+</head>
+<body>
+	<h1>kalnau</h1>
+	
+	<h2>phon/orth</h2>
+	<p>
+		Pronunciations for both classical and simplified registers are given.
+	</p>
+	<div>
+	<table>
+		<tr>
+			<td class="nb"></td>
+			<th>labial</th>
+			<th>alveolar</th>
+			<th>post-alveolar</th>
+			<th>velar</th>
+			<th>uvular</th>
+			<th>glottal</th>
+		</tr>
+		<tr>
+			<th>nasal</th>
+			<td>m</td>
+			<td colspan="2">simplified: n /n/</td>
+			<td></td>
+			<td>classical: n /ɴ/</td>
+			<td></td>
+		</tr>
+		<tr>
+		<th>stop</th>
+		<td>p</td>
+		<td colspan="2">t, d</td>
+		<td>simplified: k /k/</td>
+		<td>classical: k /q/</td>
+		<td>' /ʔ/</td>
+		</tr>
+		<tr>
+		<th>fricative</th>
+		<td>f</td>
+		<td>s, z</td>
+		<td>h /ʃ/, j /ʒ/</td>
+		<td>simplified: c /x/, r /ɣ/</td>
+		<td>classical: c /χ/, r /ʁ/</td>
+		<td></td>
+		</tr>
+		<tr>
+		<th>approximant</th>
+		<td>w</td>
+		<td colspan="2">l</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+	</table>
+	</div>
+
+	<div class=scr>
+	<table>
+		<tr>
+		<td class=nb></td>
+		<th>front</th>
+		<th>back</th>
+		</tr>
+		<tr>
+		<th>close</th>
+		<td>i</td>
+		<td>u</td>
+		</tr>
+		<tr>
+		<th>open-mid</th>
+		<td>e /ɛ/</td>
+		<td>o /ɔ/</td>
+		</tr>
+		<tr>
+		<th>near-open</th>
+		<td colspan="2">a /ɐ/</td>
+		</tr>
+	</table>
+	</div>
+
+	<h2>phonotactics</h2>
+	<p>
+		Syllable structure: <code>(C)(C)V(V)(C)(C)</code>
+	</p>
+
+	<p>Double letters are pronounced with a glottal stop in between.</p>
+
+	<h3>Disallowed consonant clusters</h3>
+	Onset:
+	<ul>
+		<li>(mn) p</li>
+		<li>(plosive) (plosive)</li>
+		<li>sz</li><li>zs</li>
+	</ul>
+
+	Coda:
+	<ul>
+		<li>(consonant) '</li>
+		<li>(consonant) w</li>
+		<li>td</li><li>dt</li>
+		<li>kg</li><li>gk</li>
+		<li>sz</li><li>zs</li>
+		<li>cr</li><li>rc</li>
+	</li>
+
+	<h2>vocabulary</h2>
+	<table>
+		<tr>
+			<th>word</th>
+			<th>noun meaning</th>
+			<th>verb meaning</th>
+			<th>modifier meaning</th>
+			<th>etymology</th>
+		</tr>
+		<tr>
+			<td>TR: om</td>
+			<td>food</td>
+			<td>to eat</td>
+			<td>food</td>
+			<td>eating onomatopoeia</td>
+		</tr>
+		<tr>
+			<td>TR: sat</td>
+			<td>speech</td>
+			<td>to talk</td>
+			<td>speech</td>
+			<td>klingon <em>jatlh</em> "speak"</td>
+		</tr>
+		<tr>
+			<td>IN: jaf</td>
+			<td>up</td>
+			<td>to be high, ascend, climb, go up</td>
+			<td>high, up</td>
+			<td>egyptian arabic <em>fōʾ</em> "up"</td>
+		</tr>
+		<tr>
+			<td>IN: lif</td>
+			<td>right</td>
+			<td>to be on the right, to be beside, move right</td>
+			<td>right</td>
+			<td>egyptian arabic <em>yimīn</em> "right"</td>
+		</tr>
+		<tr>
+			<td>TR: sef</td>
+			<td>forward</td>
+			<td>to be in front, go forward, proceed | TR: proceed with</td>
+			<td>forward</td>
+			<td>georgian <em>ts'in</em> "front"</td>
+		</tr>
+		<tr>
+			<td>IN: kan</td>
+			<td>world, universe, everything, extremely important thing</td>
+			<td>to be everything (metaphorically), to be extremely important</td>
+			<td>world, universe, everything, extremely important</td>
+			<td>egyptian arabic <em>kūn</em> "universe"</td>
+		</tr>
+		<tr>
+			<td>TR: nac*</td>
+			<td>strength</td>
+			<td>to apply strength/force to</td>
+			<td>strong</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>TR: kal</td>
+			<td>language</td>
+			<td>to localize, to translate</td>
+			<td>language</td>
+			<td>klingon <em>Hol</em> "????"</td>
+		</tr>
+		<tr>
+			<td>IN: kalnau</td>
+			<td>this language</td>
+			<td>to speak kalnau</td>
+			<td>this language</td>
+			<td>kalnau <em>kal</em> "language" + <em>na</em> "me" + <em>-u</em> (plural suffix)</td>
+		</tr>
+		<tr>
+			<td>TR: seh</td>
+			<td>what</td>
+			<td>what</td>
+			<td>what</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>TR: alp</td>
+			<td>feelings (emotional)</td>
+			<td>to feel (emotional)</td>
+			<td>feelings (emotional)</td>
+			<td>egyptian arabic <em>ʾalb</em> “heart”</td>
+		</tr>
+		<tr>
+			<td>TR: mol</td>
+			<td>amount, quantity</td>
+			<td>to measure/count the amount</td>
+			<td>amount, quantity</td>
+			<td>si units (mole)</td>
+		</tr>
+		<tr>
+			<td>IN: ton</td>
+			<td>zero, nothing</td>
+			<td>to be nullified, reduced to zero, eliminated</td>
+			<td>zero (cardinal)</td>
+			<td>kalnau <em>to-</em> "not"</td>
+		</tr>
+		<tr>
+			<td>IN: wen</td>
+			<td>one</td>
+			<td>to be one, unified</td>
+			<td>one (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: ben</td>
+			<td>two</td>
+			<td>to be two, divided</td>
+			<td>two (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: tol</td>
+			<td>three</td>
+			<td>to be three</td>
+			<td>three (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: wel</td>
+			<td>four</td>
+			<td>to be four</td>
+			<td>four (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: bel</td>
+			<td>five</td>
+			<td>to be five</td>
+			<td>five (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: tof</td>
+			<td>six</td>
+			<td>to be six</td>
+			<td>six (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: wef</td>
+			<td>seven</td>
+			<td>to be seven</td>
+			<td>seven (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: bef</td>
+			<td>eight</td>
+			<td>to be eight</td>
+			<td>eight (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: toh</td>
+			<td>nine</td>
+			<td>to be nine</td>
+			<td>nine (cardinal)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: wa</td>
+			<td>ten</td>
+			<td>to be ten</td>
+			<td>ten (cardinal)</td>
+			<td>hex digit A</td>
+		</tr>
+		<tr>
+			<td>IN: wip</td>
+			<td>eleven</td>
+			<td>to be eleven</td>
+			<td>eleven (cardinal)</td>
+			<td>hex digit B</td>
+		</tr>
+		<tr>
+			<td>IN: wis</td>
+			<td>twelve</td>
+			<td>to be twelve</td>
+			<td>twelve (cardinal)</td>
+			<td>hex digit C</td>
+		</tr>
+		<tr>
+			<td>IN: wid</td>
+			<td>thirteen</td>
+			<td>to be thirteen</td>
+			<td>thirteen (cardinal)</td>
+			<td>hex digit D</td>
+		</tr>
+		<tr>
+			<td>IN: we</td>
+			<td>fourteen</td>
+			<td>to be fourteen</td>
+			<td>fourteen (cardinal)</td>
+			<td>hex digit E</td>
+		</tr>
+		<tr>
+			<td>IN: wif</td>
+			<td>fifteen</td>
+			<td>to be fifteen</td>
+			<td>fifteen (cardinal)</td>
+			<td>hex digit F</td>
+		</tr>
+		<tr>
+			<td>TR: wil</td>
+			<td>want, desire</td>
+			<td>to want, to desire</td>
+			<td>wanted, desired</td>
+			<td>toki pona <em>wile</em> "want"</td>
+		</tr>
+		<tr>
+			<td>TR: asr</td>
+			<td>time</td>
+			<td>to count/measure time</td>
+			<td>time</td>
+			<td>arabic <em>ʿaṣr</em> “time”</td>
+		</tr>
+		<tr>
+			<td>TR: sun</td>
+			<td>sun, star</td>
+			<td>to shine | TR: to shine on</td>
+			<td>shining</td>
+			<td>english <em>sun</em></td>
+		</tr>
+		<tr>
+			<td>IN: lun</td>
+			<td>moon</td>
+			<td>?</td>
+			<td>moon</td>
+			<td>latin <em>luna</em> “moon”</td>
+		</tr>
+		<tr>
+			<td>TR: nas</td>
+			<td>person, sentient entity</td>
+			<td>to personify</td>
+			<td>time</td>
+			<td>arabic <em>ʿaṣr</em> “time”</td>
+		</tr>
+		<tr>
+			<td>IN: cent*</td>
+			<td>difference, change</td>
+			<td>to be different</td>
+			<td>different</td>
+			<td>toki pona <em>ante</em> “different”</td>
+		</tr>
+		<tr>
+			<td>TR: mama</td>
+			<td>parent, ancestor, creator</td>
+			<td>to parent, to raise</td>
+			<td>parent, ancestor, creator</td>
+			<td>multiple languages <em>mama</em> “mother”</td>
+		</tr>
+		<tr>
+			<td>IN: mer*</td>
+			<td>woman, feminine person, wife</td>
+			<td>to be a woman/feminine person</td>
+			<td>woman, feminine</td>
+			<td>french <em>mère</em> "mother"</td>
+		</tr>
+		<tr>
+			<td>IN: per*</td>
+			<td>man, masculine person, husband</td>
+			<td>to be a man/masculine person</td>
+			<td>man, masculine</td>
+			<td>french <em>père</em> "father"</td>
+		</tr>
+		<tr>
+			<td>IN: cer*</td>
+			<td>non-binary person, gender non-conforming person, transgender person</td>
+			<td>to be non-binary/gender-non-conforming/transgender</td>
+			<td>non-binary, gender non-conforming, transgender</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>TR: alh</td>
+			<td>love</td>
+			<td>to love</td>
+			<td>beloved</td>
+			<td>toki pona <em>olin</em> "love"</td>
+		</tr>
+		<tr>
+			<td>TR: mwa</td>
+			<td>kiss</td>
+			<td>to kiss</td>
+			<td>kiss</td>
+			<td>onomatopoeia</td>
+		</tr>
+		<tr>
+			<td>TR: ehk</td>
+			<td>hearing</td>
+			<td>to listen</td>
+			<td>heard</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>TR: lon</td>
+			<td>knowledge</td>
+			<td>to know</td>
+			<td>known</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>TR: dom</td>
+			<td>house</td>
+			<td>to house, to contain, to provide a living space to</td>
+			<td>house</td>
+			<td>polish <em>dom</em> "building"</td>
+		</tr>
+		<tr>
+			<td>IN: kat*</td>
+			<td>death</td>
+			<td>to be dead</td>
+			<td>dead</td>
+			<td>arabic <em>qātl</em> “killing”</td>
+		</tr>
+		<tr>
+			<td>TR: plani</td>
+			<td>fun, entertainment, amusement</td>
+			<td>to play, to enjoy</td>
+			<td>fun, entertaining, amusing</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: na</td>
+			<td>first person pronoun</td>
+			<td>to be me, to act like me, to do my thing</td>
+			<td>first person pronoun (possessive)</td>
+			<td>arabic <em>ʾanā</em> "i"</td>
+		</tr>
+		<tr>
+			<td>IN: no</td>
+			<td>second person pronoun</td>
+			<td>to be you, to act like you, to do your thing</td>
+			<td>second person pronoun (possessive)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: ne</td>
+			<td>third person pronoun</td>
+			<td>to be them, to act like them, to do their thing</td>
+			<td>third person pronoun (possessive)</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>IN: nu</td>
+			<td>this, that</td>
+			<td>to do this/that</td>
+			<td>this, that<td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>TR: kroko</td>
+			<td>speech in different language where kalnau would be more appropriate</td>
+			<td>
+				to speak a different language in an environment
+				where kalnau would be more appropriate
+			</td>
+			<td>speech in different language where kalnau would be more appropriate</td>
+			<td>esperanto <em>krokodilas</em> “crocodile”</td>
+		</tr>
+		<tr>
+			<td>IN: jam</td>
+			<td>day</td>
+			<td>?</td>
+			<td>daily</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>TR: awen</td>
+			<td>keeping, endurance</td>
+			<td>to endure, to stay, to deal with</td>
+			<td>enduring, remaining</td>
+			<td>toki pona <em>awen</em> "endure"</td>
+		</tr>
+		<tr>
+			<td>TR: tac</td>
+			<td>training</td>
+			<td>to train</td>
+			<td>training</td>
+			<td>english <em>train</em></td>
+		</tr>
+		<tr>
+			<td>IN: ikc</td>
+			<td>disgusting thing, garbage, gross thing</td>
+			<td>to be disgusted</td>
+			<td>digusting, gross</td>
+			<td>onomatopoeia</td>
+		</tr>
+		<tr>
+			<td>TR: fah</td>
+			<td>work, making, thing to do</td>
+			<td>to work, to make, to do</td>
+			<td>work, making, thing to do</td>
+			<td>esperanto <em>fari</em> "do, make"</td>
+		</tr>
+		<tr>
+			<td>TR: alt</td>
+			<td>decision/choice to be made, problem</td>
+			<td>to choose, to decide</td>
+			<td>decision/choide to be made, problematic</td>
+			<td>arabic <em>ʾaw</em> “or”</td>
+		</tr>
+		<tr>
+			<td>TR: luk</td>
+			<td>cause, reason</td>
+			<td>justify, provide a reason</td>
+			<td>reason, causer</td>
+			<td>english <em>look</em></td>
+		</tr>
+		<tr>
+			<td>TR: lan</td>
+			<td>existence, current, reality</td>
+			<td>make exist, put into reality</td>
+			<td>existing, current, real</td>
+			<td>toki pona <em>lon</em> "exist"</td>
+		</tr>
+		<tr>
+			<td>TR: tan</td>
+			<td>cause, reason</td>
+			<td>justify, provide a reason</td>
+			<td>reason, causer</td>
+			<td>toki pona <em>tan</em> "reason"</td>
+		</tr>
+		<tr>
+			<td>TR: man*</td>
+			<td>perspective</td>
+			<td>to put into perspective</td>
+			<td>perspective</td>
+			<td>a priori</td>
+		</tr>
+		<tr>
+			<td>TR: san*</td>
+			<td>inclusion, with-ness</td>
+			<td>to include</td>
+			<td>used, included</td>
+			<td>french <em>sans</em> "without"</td>
+		</tr>
+		<tr>
+			<td>TR: dan</td>
+			<td>challenge, competition</td>
+			<td>to challenge, to compete</td>
+			<td>challenging, difficult</td>
+			<td>japanese <em>dan</em> "step, rank"</td>
+		</tr>
+	</table>
+</body>
+</html>
