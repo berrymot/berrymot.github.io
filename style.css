@@ -80,6 +80,9 @@ table {
   border-collapse: collapse;
   margin-bottom: 8px;
 }
+.squish {
+  white-space: normal;
+}
 th, td {
   text-align: center;
   padding: 4px;
