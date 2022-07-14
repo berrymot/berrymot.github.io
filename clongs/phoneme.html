@@ -1,28 +1,35 @@
 <link href="../style.css" rel=stylesheet />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  #the {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>
 
-<p><b id=the></b></p>
+<p id=the></p>
 <p>sounds painful</p>
 
 <script>
-  let voicings = ["voiced", "voiceless"];
-  let places = ["labial", "frenular", "coronal", "dental", "alveolar", "flex", "dorsal", "palatal", "velar", "uvular", "laryngeal", "pharyngeal", "epiglottal", "glottal"];
-  let manners = ["nasal", "stop", "plosive", "affricate", "fricative", "vowel", "approximant", "trill", "tap", "flap", "rhotic", "liquid", "strident", "sibilant", "sonorant", "continuant", "lateral", "vibrant", "implosive", "click", "ejective"];
-  let prefixes = ["semi", "bi", "tri", "labio", "linguo", "corono", "dento", "alveo", "retro", "dorso", "palato", "velo", "uvulo", "glotto", "naso", "latero", "pre", "post", "apico", "lamino", "sub", "super", "medio", "", "", "", ""];
+  let letters = "abcdefghijklmnopqrstuvwxyzæçðøħŋœǀǁǂǃƈƙƥƭȡȴȵȶȿɀɐɑɒɓɔɕɖɗɘəɚɛɜɝɞɟɠɡɢɣɤɥɦɧɨɩɪɫɬɭɮɯɰɱɲɳɴɵɶɷɸɹɺɻɼɽɾɿʀʁʂʃʄʅʆʇʈʉʊʋʌʍʎʏʐʑʒʓʔʕʖʗʘʙʚʛʜʝʞʟʠʡʢʣʤʥʦʧʨʩʪʫʬʭʮʯβθχⱱᶑꞎ𝼀𝼁𝼂𝼃𝼄𝼅𝼆𝼇𝼈𝼉".split("");
+  let diacritics = "̴̥̬̹̜̟̠̩̯̤̰̼̝̞̘̙̪̺̻̈̽̃̆̋́̄̀̏᷈᷅᷄̂̌̚".split("");
+  let mods = "ːˑᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖ𐞥ʳˢᵗᵘᵛʷˣʸᶻᵝᶿᵡ𐞁𐞂𐞃𐞄𐞅𐞇𐞈𐞉𐞊𐞋𐞌𐞍𐞎𐞏𐞐𐞑𐞒𐞓𐞔𐞕𐞖𐞗𐞘𐞙𐞚𐞛𐞜𐞝𐞞𐞟𐞠𐞡𐞢𐞣𐞤𐞥𐞦𐞧𐞨𐞩𐞪𐞫𐞬𐞭𐞮𐞯𐞰𐞲𐞳𐞴𐞵𐞶𐞷𐞸𐞹".split("");
+  diacritics.push("");
+  mods.push("");
   
   function random(a) {
     return a[Math.floor(Math.random() * a.length)];
   }
-  function prefix() {
+  
+  function repeat(a) {
     var s = "";
     let n = Math.floor(Math.random() * 4);
     var x;
     for (var i = 0; i < n; i++) {
-      x = random(prefixes);
-      s += x + (x ? "-" : "");
+      s += random(a);
     }
     return s;
   }
   
-  document.getElementById("the").textContent = random(voicings) + " " + prefix() + random(places) + " " + prefix() + random(manners);
+  document.getElementById("the").textContent = "[" + random(letters) + repeat(diacritics) + repeat(mods) + "]";
 </script>
