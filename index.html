@@ -1,15 +1,15 @@
 <link href="style.css" rel=stylesheet />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
-  #l {
+  .l {
     display: block;
   }
-  #d {
+  .d {
     display: none;
   }
   @media (prefers-color-scheme: dark) {
-    #l { display: none; }
-    #d { display: block; }
+    .l { display: none; }
+    .d { display: block; }
   }
 </style>
 
@@ -35,5 +35,9 @@
 <p>to certify <i>your</i> website, just add this to <code>index.html</code>:</p>
 <pre>&lt;p>&lt;img src="https://berrymot.github.io/i/blahaj.png" style="height:1em;" /> certified Good Website by blåhaj&lt;/p></pre>
 
-<iframe id=l height="50" src="https://george.gh0.pw/embed.cgi?merrybot&c_links=%235319e7&c_george=%235319e7" style="border:none;width:100%;"></iframe>
-<iframe id=d height="50" src="https://george.gh0.pw/embed.cgi?merrybot&c_links=%238c4bff&c_george=%238c4bff&c_bg=black&c_fg=white" style="border:none;width:100%;"></iframe>
+<p>
+  <iframe class=l height="50" src="https://george.gh0.pw/embed.cgi?merrybot&c_links=%235319e7&c_george=%235319e7" style="border:none;width:100%;"></iframe>
+  <iframe class=d height="50" src="https://george.gh0.pw/embed.cgi?merrybot&c_links=%238c4bff&c_george=%238c4bff&c_bg=black&c_fg=white" style="border:none;width:100%;"></iframe>
+  <iframe class=l id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=merrybot&lightmode=true"></iframe>
+  <iframe class=d id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=merrybot"></iframe>
+</p>
