@@ -98,7 +98,7 @@
 	for example, <em>nas alh</em> means "person of love".
 </p>
 <div class=scr>
-	<table class=squish>
+	<table id=words class=squish>
 		<tr>
 			<th colspan="2">word</th>
 			<th>noun meaning</th>
@@ -232,7 +232,7 @@
 		</tr>
 		<tr>
       <td>IN*</td>
-			<td>ben</td>
+			<td>pen</td>
 			<td>two</td>
 			<td>to be two, divided</td>
 			<td>two (cardinal)</td>
@@ -256,7 +256,7 @@
 		</tr>
 		<tr>
       <td>IN*</td>
-			<td>bel</td>
+			<td>pel</td>
 			<td>five</td>
 			<td>to be five</td>
 			<td>five (cardinal)</td>
@@ -280,7 +280,7 @@
 		</tr>
 		<tr>
       <td>IN*</td>
-			<td>bef</td>
+			<td>pef</td>
 			<td>eight</td>
 			<td>to be eight</td>
 			<td>eight (cardinal)</td>
@@ -701,11 +701,18 @@
 			<td>arabic <em>naml</em> "ants"</td>
 		</tr>
 		<tr>
-			<td>IN</td><td>sin*</td>
-			<td>new/fresh/again thing</td>
-			<td>to be new/fresh/again</td>
-			<td>new, fresh, again</td>
+			<td>IN*</td><td>sin</td>
+			<td>new/fresh/beginning thing</td>
+			<td>to be new/fresh/beginning</td>
+			<td>new, fresh, beginning</td>
 			<td>toki pona <em>sin</em> "new"</td>
+		</tr>
+		<tr>
+			<td>IN*</td><td>tin</td>
+			<td>again/repeated thing</td>
+			<td>to be again/repeated</td>
+			<td>again, repeated</td>
+			<td>a priori</td>
 		</tr>
 		<tr>
 			<td>IN*</td><td>kad</td>
@@ -757,40 +764,43 @@
 			<td>toki pona <em>suli</em> "big"</td>
 		</tr>
 		<tr>
-			<tr>IN</tr>
-			<tr>caj</tr>
-			<tr>rock, solid/hard thing</tr>
-			<tr>to be solid/hard (metaphorically or physically)</tr>
-			<tr>solid, hard</tr>
+			<td>IN</td>
+			<td>caj</td>
+			<td>rock, solid/hard thing</td>
+			<td>to be solid/hard (metaphorically or physically)</td>
+			<td>solid, hard</td>
+			<td>a priori</td>
 		</tr>
 		<tr>
-			<tr>TR</tr>
-			<tr>laj</tr>
-			<tr>water, liquid</tr>
-			<tr>to wash, to cover in water</tr>
-			<tr>liquid</tr>
+			<td>TR</td>
+			<td>laj</td>
+			<td>water, liquid</td>
+			<td>to wash, to cover in water</td>
+			<td>liquid</td>
+			<td>a priori</td>
 		</tr>
 		<tr>
-			<tr>TR</tr>
-			<tr>waj</tr>
-			<tr>air, gas</tr>
-			<tr>to blow</tr>
-			<tr>gaseous, airy</tr>
+			<td>TR</td>
+			<td>waj</td>
+			<td>air, gas</td>
+			<td>to blow</td>
+			<td>gaseous, airy</td>
+			<td>a priori</td>
 		</tr>
 		<tr>
-			<tr>IN*</tr>
-			<tr>ran</tr>
-			<tr>quick/fast thing</tr>
-			<tr>to be quick/fast</tr>
-			<tr>quick, fast</tr>
-			<tr>a priori</tr>
+			<td>IN*</td>
+			<td>ran</td>
+			<td>quick/fast thing</td>
+			<td>to be quick/fast</td>
+			<td>quick, fast</td>
+			<td>a priori</td>
 		</tr>
 	</table>
 </div>
 
 <h2>particles / stuff that's not nouns or verbs or mods</h2>
 <div class="scr">
-  <table class="squish">
+  <table id=particles class="squish">
     <tr>
       <th>word</th>
       <th>meaning</th>
@@ -839,7 +849,7 @@
       <td>N/A</td>
       <td>a priori</td>
     </tr>
-    <tr>
+	<tr>
       <td>o</td>
       <td>imperative particle</td>
       <td>N/A</td>
@@ -930,18 +940,19 @@
 <p>
 	all affixes which aren't just a vowel can have their vowel removed to
 	shorten. * takes precedence if shortening of affix is ambiguous, other
-	affixes which it takes priority over shown in parentheses.
+	affixes which it takes priority over are shown.
 </p>
 <div class="scr">
-  <table class="squish">
+  <table id=affixes class="squish">
     <tr>
-      <th>word</th>
+      <th colspan=2>word</th>
       <th>meaning</th>
       <th>can be applied to</th>
       <th>produces</th>
       <th>etymology</th>
     </tr>
     <tr>
+		<td></td>
       <td>ti-</td>
       <td>strong intensity modifier</td>
       <td>any</td>
@@ -949,6 +960,7 @@
       <td>a priori</td>
     </tr>
     <tr>
+		<td></td>
       <td>te-</td>
       <td>weak intensity modifier</td>
       <td>any</td>
@@ -956,6 +968,7 @@
       <td>a priori</td>
     </tr>
     <tr>
+		<td></td>
       <td>to-</td>
       <td>no, not, non-</td>
       <td>any</td>
@@ -963,6 +976,7 @@
       <td>a priori</td>
     </tr>
     <tr>
+		<td></td>
       <td>tu-</td>
       <td>anti-, un-</td>
       <td>any</td>
@@ -970,20 +984,23 @@
       <td>a priori</td>
     </tr>
     <tr>
-      <td>*(ti-, te-, to-, tu-, ta-) t-</td>
+		<td>* ti-, te-, to-, tu-, ta-</td>
+      <td>t-</td>
       <td>can mean to- or tu-</td>
       <td>any</td>
       <td>same</td>
       <td>a priori</td>
     </tr>
     <tr>
-      <td>*(he-) h-</td>
+		<td>* he-</td>
+      <td>h-</td>
       <td>pluralizer</td>
       <td>noun</td>
       <td>noun</td>
       <td>a priori</td>
     </tr>
     <tr>
+		<td></td>
       <td>ni-</td>
       <td>noun derivation</td>
       <td>any</td>
@@ -991,27 +1008,31 @@
       <td>a priori</td>
     </tr>
     <tr>
-      <td>*(pa-) pi-</td>
+		<td>* pa-</td>
+      <td>pi-</td>
       <td>modifier derivation</td>
       <td>any</td>
       <td>modifier</td>
       <td>toki pona <em>pi</em> (modifier regrouping particle)</td>
     </tr>
     <tr>
-      <td>*(fu-) fi-</td>
+		<td>* fu-</td>
+      <td>fi-</td>
       <td>verb derivation</td>
       <td>any</td>
       <td>verb</td>
       <td>a priori</td>
     </tr>
     <tr>
-      <td>*(sa-) si-</td>
+		<td>* sa-</td>
+      <td>si-</td>
       <td>past tense marker</td>
       <td>verb</td>
       <td>verb</td>
       <td>a priori</td>
     </tr>
     <tr>
+		<td></td>
       <td>di-</td>
       <td>future tense marker</td>
       <td>verb</td>
@@ -1019,6 +1040,7 @@
       <td>a priori</td>
     </tr>
     <tr>
+		<td></td>
       <td>he-</td>
       <td>yes/no question</td>
       <td>any</td>
@@ -1026,6 +1048,7 @@
       <td>kalnau <em>eh</em> "what"</td>
     </tr>
     <tr>
+		<td></td>
       <td>ki-</td>
       <td>causal</td>
       <td>noun</td>
@@ -1033,6 +1056,7 @@
       <td>a priori</td>
     </tr>
     <tr>
+		<td></td>
       <td>ci-</td>
       <td>one-word relative clause (that __)</td>
       <td>verb</td>
@@ -1040,6 +1064,7 @@
       <td>kalhna <em>ci'</em></td>
     </tr>
     <tr>
+		<td></td>
       <td>wi-</td>
       <td>one-word relative clause (that is __-en)</td>
       <td>verb</td>
@@ -1047,6 +1072,7 @@
       <td>kalhna <em>wi'</em></td>
     </tr>
     <tr>
+		<td></td>
       <td>e-</td>
       <td>switch to subject (equivalent to <em>e __</em>)</td>
       <td>N/A</td>
@@ -1054,6 +1080,7 @@
       <td>kalhna <em>e</em></td>
     </tr>
     <tr>
+		<td></td>
       <td>fu-</td>
       <td>switch to verb (equivalent to <em>fu __</em>)</td>
       <td>N/A</td>
@@ -1061,6 +1088,7 @@
       <td>kalhna <em>fu</em></td>
     </tr>
     <tr>
+		<td></td>
       <td>ju-</td>
       <td>switch to object (equivalent to <em>ju __</em>)</td>
       <td>N/A</td>
@@ -1068,20 +1096,23 @@
       <td>kalhna <em>ju</em></td>
     </tr>
     <tr>
-      <td>*(ju-) je-</td>
+		<td>* ju-</td>
+      <td>je-</td>
       <td>object binding</td>
       <td>noun</td>
       <td>modifier</td>
       <td>a priori</td>
     </tr>
     <tr>
-      <td>*(lo-) la-</td>
+		<td>* lo-</td>
+      <td>la-</td>
       <td>in, on, inside</td>
       <td>noun</td>
       <td>modifier</td>
       <td>kalhna <em>lan</em></td>
     </tr>
     <tr>
+		<td></td>
       <td>ta-</td>
       <td>because of, due to, from</td>
       <td>noun</td>
@@ -1089,6 +1120,7 @@
       <td>kalhna <em>tan</em></td>
     </tr>
     <tr>
+		<td></td>
       <td>ma-</td>
       <td>to, towards, for, in perspective of</td>
       <td>noun</td>
@@ -1096,6 +1128,7 @@
       <td>kalhna <em>man</em></td>
     </tr>
     <tr>
+		<td></td>
       <td>sa-</td>
       <td>with, using</td>
       <td>noun</td>
@@ -1103,6 +1136,7 @@
       <td>kalhna <em>san</em></td>
     </tr>
 	<tr>
+		<td></td>
 		<td>pa-</td>
 		<td>to, towards (moving)</td>
 		<td>noun</td>
@@ -1111,6 +1145,7 @@
 	  </tr>
 	<tr>
 		<!-- cursed as heck -->
+		<td></td>
 		<td>lo-</td>
 		<td>preposition coercion</td>
 		<td>any</td>
@@ -1119,6 +1154,201 @@
 	</tr>
   </table>
 </div>
+
+<h2>stats</h2>
+<noscript>enable JS to see stats</noscript>
+
+<table id=letterfreq>
+	<tr>
+		<td rowspan=2></td>
+		<th colspan=4>wor</th>
+	</tr>
+	<tr>
+		<th>words</th>
+		<th>particles</th>
+		<th>affixes</th>
+		<th>total</th>
+	</tr>
+</table>
+
+<table id=particles_starting>
+	<tr>
+		<td></td>
+		<th>particles starting with</th>
+		<th>affixes starting with</th>
+	</tr>
+</table>
+
+<!-- <textarea id=parse placeholder="padom na"></textarea>
+<br><button onclick="parse()">parse</button><br>
+<textarea id=parse_result readonly></textarea> -->
+
+<script>
+
+let words = [...document.getElementById("words").children[0].children].map(x => x.children[1].innerText);
+words.shift();
+
+let particles = [...document.getElementById("particles").children[0].children].map(x => x.children[0].innerText);
+particles.shift();
+
+let affixes = [...document.getElementById("affixes").children[0].children].map(x => x.children[1].innerText);
+affixes.shift();
+
+let letterFreq = document.getElementById("letterfreq");
+let particlesStarting = document.getElementById("particles_starting");
+
+let letters = {};
+for(let letter of "mnptdk'fszhjcrwlaeiou".split("")) {
+	let freq_row = document.createElement("tr");
+	let th = document.createElement("th");
+	th.innerText = letter;
+	freq_row.appendChild(th);
+	
+	let words = document.createElement("td");
+	freq_row.appendChild(words);
+	
+	let particles = document.createElement("td");
+	freq_row.appendChild(particles);
+
+	let affixes = document.createElement("td");
+	freq_row.appendChild(affixes);
+
+	let total = document.createElement("td");
+	freq_row.appendChild(total);
+
+	let bwords = document.createElement("td");
+	freq_row.appendChild(bwords);
+	
+	let bparticles = document.createElement("td");
+	freq_row.appendChild(bparticles);
+
+	let baffixes = document.createElement("td");
+	freq_row.appendChild(baffixes);
+
+	let btotal = document.createElement("td");
+	freq_row.appendChild(btotal);
+
+	let th2 = document.createElement("th");
+	th2.innerText = letter;
+	let particles_row = document.createElement("tr");
+	particles_row.appendChild(th2);
+
+	let particles_starting = document.createElement("td");
+	particles_row.appendChild(particles_starting);
+
+	let affixes_starting = document.createElement("td");
+	particles_row.appendChild(affixes_starting);
+
+	letters[letter] = { freq_row, words, particles, affixes, total, bwords, bparticles, baffixes, btotal, particles_row, particles_starting, affixes_starting };
+}
+
+for(let word of words) {
+	for(let c of word.split("")) {
+		letters[c].words.innerText = Number(letters[c].words.innerText) + 1;
+		letters[c].total.innerText = Number(letters[c].total.innerText) + 1;
+	}
+	letters[word[0]].bwords.innerText = Number(letters[word[0]].bwords.innerText) + 1;
+	letters[word[0]].btotal.innerText = Number(letters[word[0]].btotal.innerText) + 1;
+}
+
+for(let word of particles) {
+	if(letters[word[0]].particles_starting.innerText === "") {
+		letters[word[0]].particles_starting.innerText = word;
+	} else {
+		letters[word[0]].particles_starting.innerText += ", " + word;
+	}
+	for(let c of word.split("")) {
+		letters[c].particles.innerText = Number(letters[c].particles.innerText) + 1;
+		letters[c].total.innerText = Number(letters[c].total.innerText) + 1;
+	}
+	letters[word[0]].bparticles.innerText = Number(letters[word[0]].bparticles.innerText) + 1;
+	letters[word[0]].btotal.innerText = Number(letters[word[0]].btotal.innerText) + 1;
+}
+
+for(let word of affixes) {
+	if(letters[word[0]].affixes_starting.innerText === "") {
+		letters[word[0]].affixes_starting.innerText = word;
+	} else {
+		letters[word[0]].affixes_starting.innerText += ", " + word;
+	}
+	for(let c of word.split("")) {
+		if(c === "-") continue;
+		letters[c].affixes.innerText = Number(letters[c].affixes.innerText) + 1;
+		letters[c].total.innerText = Number(letters[c].total.innerText) + 1;
+	}
+	if(word[0] === "-") continue;
+	letters[word[0]].baffixes.innerText = Number(letters[word[0]].baffixes.innerText) + 1;
+	letters[word[0]].btotal.innerText = Number(letters[word[0]].btotal.innerText) + 1;
+}
+
+let l = Object.values(letters);
+l.sort((a, b) => a.total.innerText - b.total.innerText);
+
+for(let letter of l) {
+	letterFreq.appendChild(letter.freq_row);
+}
+
+l.sort((a, b) => a.affixes_starting.innerText.length - b.affixes_starting.innerText.length);
+
+for(let letter of l) {
+	particlesStarting.appendChild(letter.particles_row);
+}
+
+function parse() {
+	let input = document.getElementById("parse").value.split(/\s*/g);
+	let p = parseSentence(input);
+	document.getElementById("parse_result").value = JSON.stringify(p);
+}
+
+function parseSentence(input) {
+	const SUBJ = 0;
+	const VERB = 1;
+	const OBJ = 2;
+	let result = { subject: {}, verb: {}, object: {} };
+	let state = [VERB, false];
+	while(input.length !== 0) {
+		let atom = parseAtom(input);
+		if(atom.type === "subj") {
+			state = [SUBJ, true];
+			atom = atom.inner;
+		} else if(atom.type === "verb") {
+			state = [VERB, true];
+			atom = atom.inner;
+		} else if(atom.type === "obj") {
+			state = [OBJ, true];
+			atom = atom.inner;
+		}
+
+	}
+	return result;
+}
+
+function parseAtom(input) {
+	let inner = {};
+	let meaning = inner;
+	let word = input.shift();
+	while(word.length >= 4) {
+		if(word.startsWith("ni")) {
+			word = word.slice(2);
+			Object.assign(inner, {
+				type: "coerce",
+				to: "noun",
+				inner: {}
+			});
+			inner = inner.inner;
+		}
+	}
+	if(word === "pi'") {
+		Object.assign(inner, {
+			type: "pigroup",
+			contents: parseStrong(input)
+		});
+	}
+	
+	return meaning;
+}
+
+</script>
 
 <!-- <h2>conlang test cases translated</h2>
 <table>
@@ -1132,14 +1362,14 @@
 		The sun shone.||| sisun sun
 		The sun will shine.|||disun sun
 		The sun has been shining.|||awen pfisun sun
-		The sun is shining again.|||sun sin sun
+		The sun is shining again.|||sun tin sun
 		The sun will shine tomorrow.|||disun la' jam kad i sun
 		The sun shines brightly.|||sun pisun sun
 		The bright sun shines.|||sun sun pisun
 		The sun is rising now.|||fo la' asr dac i sun
 		All the people shouted.|||sikar sul nas kol
 		Some of the people shouted.|||sikar sul nas tenol
-		Many of the people shouted twice.|||sikar sul ben nas nol
+		Many of the people shouted twice.|||sikar sul pen nas nol
 		Happy people often shout.|||kar sul lanol nas ci' alp sil ic
 		The kitten jumped up.|||sipafo pah
 		The kitten jumped onto the table.|||sipa' fo Table i pah
@@ -1158,7 +1388,7 @@
 		I will be happy to go.|||?
 		He will arrive soon.|||dikad latekad ne
 		The baby's ball has rolled away.|||span patof sik pi' nas tsul i
-		The two boys are working together.|||fah per ben
+		The two boys are working together.|||fah per pen
 		This mist will probably clear away.
 		Lovely flowers are growing everywhere.
 		We should eat more slowly.
