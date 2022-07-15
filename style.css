@@ -95,6 +95,16 @@ th {
 td.nb {
   border: none;
 }
+/* rotatable table cells */
+:is(th, td).r {
+  transform: rotate(180deg);
+}
+:is(th, td).r span {
+  writing-mode: vertical-rl;
+}
+tr:first-child th.r {
+  vertical-align: top;
+}
 
 iframe {
   display: block; /* heck you */
