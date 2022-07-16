@@ -102,7 +102,7 @@ td.nb {
 :is(th, td).r span {
   writing-mode: vertical-rl;
 }
-tr:first-child th.r {
+tr:is(:first-child, .top) th.r {
   vertical-align: top;
 }
 
