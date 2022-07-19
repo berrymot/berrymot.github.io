@@ -24,6 +24,7 @@
 body > :not(.fbld) {
   position: relative;
   max-width: 40em;
+  margin: auto;
 }
 body, div.list {
   color: var(--fg);
