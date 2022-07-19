@@ -94,6 +94,9 @@ ins {
 .scr {
   overflow-x: auto;
 }
+.scr table {
+  margin: auto auto 8px;
+}
 
 table {
   white-space: nowrap;
