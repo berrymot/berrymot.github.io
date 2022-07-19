@@ -60,7 +60,7 @@ div.list, ul, ol, li {
 div.list {
   margin: 1em auto;
 }
-ul, ol {
+ul, ol, div.left, dl {
   text-align: left;
 }
 li {
@@ -74,7 +74,7 @@ dt {
   font-weight: bold;
 }
 dl.lex dd {
-  font-style: italic;
+  white-space: pre;
 }
 
 /* ::marker, */ dt, legend {
