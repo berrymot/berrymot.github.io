@@ -24,12 +24,14 @@
 body > :not(.fbld) {
   position: relative;
   max-width: 40em;
-  margin: 0 auto;
 }
 body, div.list {
   color: var(--fg);
   background: var(--bg);
   text-align: center;
+}
+body {
+  margin: 0 auto;
 }
 
 :not(pre, code, samp) {
