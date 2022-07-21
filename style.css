@@ -39,6 +39,7 @@ body, div.list {
 }
 body {
   margin: 0 auto;
+  font-size: 17px;
 }
 
 * {
