@@ -18,6 +18,11 @@
   }
 }
 
+@font-face {
+  src: url("https://berrymot.github.io/mbmono220717.ttf");
+  font-family: "mbmono";
+}
+
 * {
   box-sizing: border-box;
 }
@@ -36,11 +41,11 @@ body {
   margin: 0 auto;
 }
 
-:not(pre, code, samp) {
-  font-family: "noto sans", "arial", sans-serif !important;
+* {
+  font-family: "mbmono", "noto sans mono", "consolas", monospace !important;
 }
 pre, code, samp {
-  font-family: "noto sans mono", "courier new", monospace;
+  background: var(--grbg);
 }
 pre {
   overflow-x: auto;
