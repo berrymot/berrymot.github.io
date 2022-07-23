@@ -32,12 +32,9 @@ body > :not(.fbld) {
   margin-left: auto;
   margin-right: auto;
 }
-body, div.list {
+body {
   color: var(--fg);
   background: var(--bg);
-  text-align: center;
-}
-body {
   margin: 0 auto;
   font-size: 17px;
 }
@@ -60,19 +57,6 @@ a:hover {
   text-decoration: underline;
 }
 
-div.list, ul, ol, li {
-  width: fit-content;
-}
-div.list {
-  margin: 1em auto;
-}
-ul, ol, div.left, dl {
-  text-align: left;
-}
-li {
-  max-width: calc(40em - 40px); /* width of stuff - default list padding */
-}
-
 ul {
   list-style-type: disc;
 }
@@ -87,9 +71,6 @@ dl.lex dd {
   color: var(--purp);
 }
 
-.sc {
-  font-variant: small-caps;
-}
 del {
   color: var(--red);
 }
