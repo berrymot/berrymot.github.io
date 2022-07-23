@@ -22,13 +22,15 @@
   src: url("https://berrymot.github.io/mbmono220721.ttf");
   font-family: "mbmono";
 }
-
+html {
+  font-size: 17px;
+}
 * {
   box-sizing: border-box;
 }
 body > :not(.fbld) {
   position: relative;
-  max-width: 40em;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -36,7 +38,6 @@ body {
   color: var(--fg);
   background: var(--bg);
   margin: 0 auto;
-  font-size: 17px;
 }
 
 * {
