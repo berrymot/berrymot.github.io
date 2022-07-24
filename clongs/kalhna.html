@@ -33,7 +33,7 @@
     <tr>
       <th>fricative</th>
       <td>f</td>
-      <td>s, z</td>
+      <td>s</td>
       <td>h /ʃ/, j /ʒ/</td>
       <td>c /x~χ/, r /ɣ~ʁ/</td>
       <td></td>
@@ -73,7 +73,7 @@
 </div>
 
 <h2>phonotactics</h2>
-<p>syllable structure: <code>(C)(C)V(V)(C)(C)</code></p>
+<p>syllable structure: <code>(C)² V (V) (C)²</code></p>
 <p>double letters are pronounced with a glottal stop or /h/ in between.</p>
 
 <h3>disallowed consonant clusters</h3>
@@ -81,14 +81,13 @@
 <ul>
   <li>a nasal followed by /p/</li>
   <li>two consecutive plosives</li>
-  <li>/sz/ or /zs/</li>
 </ul>
 </p>
 
 <p>coda:
 <ul>
   <li>consonant followed by /ʔ/ or /w/</li>
-  <li>&lt;td, dt, kg, gk, sz, zs, cr, rc></li>
+  <li>/td, dt, χʁ, ʁχ/</li>
 </ul>
 </p>
 
@@ -1284,7 +1283,7 @@
   let particlesStarting = document.getElementById("particles_starting");
 
   let letters = {};
-  for (let letter of "mnptdk'fszhjcrwlaeiou".split("")) {
+  for (let letter of "mnptdk'fshjcrwlaeiou".split("")) {
     let freq_row = document.createElement("tr");
     let th = document.createElement("th");
     th.innerText = letter;
