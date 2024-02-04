@@ -119,6 +119,14 @@ a:hover {
     margin: 0 !important;
 }
 
+/* indented things */
+ul, ol, dl, blockquote, math[display="block"] {
+    padding-left: 4ch;
+}
+math[display="block"] {
+    text-align: left;
+}
+
 /* tables */
 table {
     border-collapse: collapse;
