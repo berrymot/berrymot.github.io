@@ -1,6 +1,32 @@
 *, input, button {
     box-sizing: border-box;
-    font-family: "Iosevka Fixed", "consolas";
+    font-family: "Iosevka", monospace;
+}
+
+/* fonts */
+@font-face {
+    font-family: "Iosevka";
+    src: url("fonts/Iosevka-Regular.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Iosevka";
+    src: url("fonts/Iosevka-Italic.ttf");
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Iosevka";
+    src: url("fonts/Iosevka-Bold.ttf");
+    font-display: swap;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Iosevka";
+    src: url("fonts/Iosevka-BoldItalic.ttf");
+    font-display: swap;
+    font-weight: bold;
+    font-style: italic;
 }
 
 /* colors */
