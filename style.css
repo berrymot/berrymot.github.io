@@ -1,13 +1,70 @@
 *, input, button {
     box-sizing: border-box;
-    font-family: "Iosevka Fixed", "Noto Sans Math";
+    font-family: "Iosevka Fixed", "consolas";
 }
+
+/* colors */
 :root {
     --paper: #000;
     --text: #fff;
     --h-bg: #336;
     --h-fg: #ccf;
+    --red-bg: #600;
+    --red-fg: #f99;
+    --orange-bg: #630;
+    --orange-fg: #fc9;
+    --yellow-bg: #660;
+    --yellow-fg: #ff9;
+    --green-bg: #042;
+    --green-fg: #9fc;
+    --blue-bg: #036;
+    --blue-fg: #9cf;
+    --purple-bg: #306;
+    --purple-fg: #c9f;
+    --pink-bg: #603;
+    --pink-fg: #f9c;
+    --pad: 1em;
+    --half-pad: 0.5em;
 }
+.green {
+    background-color: var(--green-bg);
+    color: var(--green-fg);
+}
+.gay-fg {
+    background-image: linear-gradient(to right,
+        var(--red-fg),
+        var(--orange-fg),
+        var(--yellow-fg),
+        var(--green-fg),
+        var(--blue-fg),
+        var(--purple-fg),
+        var(--pink-fg)
+    );
+    background-clip: text;
+    color: transparent;
+}
+.trans-fg {
+    background-image: linear-gradient(to right,
+        var(--blue-fg),
+        var(--pink-fg),
+        var(--text),
+        var(--pink-fg),
+        var(--blue-fg)
+    );
+    background-clip: text;
+    color: transparent;
+}
+.lesbian-fg {
+    background-image: linear-gradient(to right,
+        var(--orange-fg),
+        var(--text),
+        var(--pink-fg)
+    );
+    background-clip: text;
+    color: transparent;
+}
+
+/* boring */
 html {
     background-color: var(--paper);
     color: var(--text);
@@ -18,15 +75,61 @@ body {
     padding: 6px;
 }
 h1 {
-    padding: 1em;
+    padding: var(--pad);
     background-color: var(--h-bg);
     color: var(--h-fg);
     text-align: center;
 }
-/* math */
+a {
+    color: var(--h-fg);
+}
+a:hover {
+    color: var(--blue-fg);
+}
+.no-pad {
+    padding: 0 !important;
+}
+.no-marg {
+    margin: 0 !important;
+}
 
-@media (max-width: 400px) {
-    h1 {
-        padding: 0.5em;
+/* tables */
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: var(--pad);
+}
+table.fixed {
+    width: 100%;
+    table-layout: fixed;
+}
+table.fixed :is(th, td) {
+    padding: var(--pad) 0;
+}
+table.tiny :is(th, td) {
+    padding: var(--half-pad) var(--pad);
+}
+table.fixed.tiny :is(th, td) {
+    padding: var(--half-pad) 0;
+}
+table.border-all :is(th, td) {
+    border: 1px solid var(--h-fg);
+}
+table.no-outer :is(th, td) {
+    border: none;
+}
+table.no-outer :is(th, td):not(:last-child) {
+    border-right: 1px solid var(--h-fg);
+}
+table.center-all :is(th, td) {
+    text-align: center;
+}
+
+/* mobile etc */
+@media (max-width: 600px) {
+    :root {
+        --pad: 0.5em;
+        --half-pad: 0.25em;
     }
 }
