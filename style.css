@@ -1,0 +1,32 @@
+*, input, button {
+    box-sizing: border-box;
+    font-family: "Iosevka Fixed", "Noto Sans Math";
+}
+:root {
+    --paper: #000;
+    --text: #fff;
+    --h-bg: #336;
+    --h-fg: #ccf;
+}
+html {
+    background-color: var(--paper);
+    color: var(--text);
+}
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 6px;
+}
+h1 {
+    padding: 1em;
+    background-color: var(--h-bg);
+    color: var(--h-fg);
+    text-align: center;
+}
+/* math */
+
+@media (max-width: 400px) {
+    h1 {
+        padding: 0.5em;
+    }
+}
