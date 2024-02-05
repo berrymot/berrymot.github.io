@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>how to html</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="temml/dist/temml.min.js"></script>
+        <script src="temml/contrib/auto-render/dist/auto-render.min.js"></script>
+    </head>
+    <body>
+        <script>
+            function preview() {
+                var pre = document.getElementsByTagName("pre");
+                pre = pre[pre.length - 1].textContent;
+                var iframe = document.createElement("iframe");
+                iframe.srcdoc = "<style>body{background-color:white;}</style>" + (pre || "");
+                document.body.append(iframe);
+            }
+        </script>
+        <h1>how to html</h1>
+        <h2>document structure</h2>
+        <p>here's the minimal requirement for a page:</p>
+        <pre>
+&lt;!<span class="blue-fg">DOCTYPE</span> <span class="h-fg">html</span>>
+&lt;<span class="blue-fg">html</span> <span class="h-fg">lang</span>=<span class="orange-fg">"en"</span>>
+    &lt;<span class="blue-fg">head</span>>
+        &lt;<span class="blue-fg">meta</span> <span class="h-fg">charset</span>=<span class="orange-fg">"utf-8"</span> />
+        &lt;<span class="blue-fg">meta</span> <span class="h-fg">name</span>=<span class="orange-fg">"viewport"</span> <span class="h-fg">content</span>=<span class="orange-fg">"width=device-width, initial-scale=1.0"</span> />
+        &lt;<span class="blue-fg">title</span>>very good page&lt;/<span class="blue-fg">title</span>>
+    &lt;/<span class="blue-fg">head</span>>
+    &lt;<span class="blue-fg">body</span>>
+        <i class="green-fg">&lt;!-- whatever you want! --></i>
+    &lt;/<span class="blue-fg">body</span>>
+&lt;/<span class="blue-fg">html</span>></pre>
+        <p>you can save this to a file ending in <code>.html</code> if you want. if you then open it in a browser you'll see...</p>
+        <script>preview();</script>
+        <p>...oh that's not very much. here's what this does:</p>
+        <p class="red">todo: explain</p>
+        <!-- the -->
+        <p>you <i>technically</i> don't need to explicitly mark <code>&lt;html></code> or <code>&lt;head></code> or <code>&lt;body></code>, the browser will do it for you, but it's a good idea to anyway.</p>
+        <script>renderMathInElement(document.body);</script>
+    </body>
+</html>

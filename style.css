@@ -73,6 +73,16 @@
     --pad: 1em;
     --half-pad: 0.5em;
 }
+.h-fg {
+    color: var(--h-fg);
+}
+.h-bg {
+    background-color: var(--h-bg);
+}
+.h {
+    background-color: var(--h-bg);
+    color: var(--h-fg);
+}
 .red-fg {
     color: var(--red-fg);
 }
@@ -191,6 +201,7 @@
 *, input, button {
     box-sizing: border-box;
     font-family: "Iosevka", monospace;
+    font-variant-ligatures: none;
 }
 html {
     background-color: var(--paper);
@@ -224,12 +235,20 @@ a:hover {
 .no-marg {
     margin: 0 !important;
 }
-code *, pre *, math * {
+:is(code, pre, math), :is(code, pre, math) * {
     font-family: "Iosevka Slab";
 }
 code, pre {
     background-color: var(--gray-bg);
     color: var(--gray-fg);
+}
+pre {
+    overflow: auto;
+}
+iframe {
+    width: 100%;
+    height: 15em;
+    border: none;
 }
 
 /* indented things */
