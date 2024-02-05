@@ -81,6 +81,33 @@
         <p>the other two specifically mean you're emphasizing something:</p>
         <pre>&lt;<span class="blue-fg">p</span>>&lt;<span class="blue-fg">strong</span>>Warning!&lt;/<span class="blue-fg">strong</span>> Do &lt;<span class="blue-fg">em</span>>not&lt;/<span class="blue-fg">em</span>> eat too many pickles&lt;/<span class="blue-fg">p</span>></pre>
         <script>preview();</script>
+        <p>there's a similar distinction for <span class="u">underline</span> and <s>strikethrough</s>:</p>
+        <table class="border-all">
+            <tr>
+                <th></th>
+                <th>'regular'</th>
+                <th>semantic<br /></th>
+            </tr>
+            <tr>
+                <th>underline</th>
+                <td>-</td>
+                <td><code>&lt;<span class="blue-fg">u</span>></code><br /><code>&lt;<span class="blue-fg">ins</span>></code></td>
+            </tr>
+            <tr>
+                <th>strikethrough</th>
+                <td><code>&lt;<span class="blue-fg">s</span>></code></td>
+                <td><code>&lt;<span class="blue-fg">del</span>></code></td>
+            </tr>
+        </table>
+        <p>there is no non-meaningful way to underline stuff without using Magic that i'll tell you about later. <code>&lt;<span class="blue-fg">u</span>></code> is for crap like <i>*checks notes*</i></p>
+        <pre>&lt;<span class="blue-fg">u</span>>speling&lt;/<span class="blue-fg">u</span>> &lt;<span class="blue-fg">u</span>>erors&lt;/<span class="blue-fg">u</span>></pre>
+        <script>preview();</script>
+        <p><code>&lt;<span class="blue-fg">ins</span>></code> and <code>&lt;<span class="blue-fg">del</span>></code> mark inserted and deleted text.</p>
+        <p>another thing you can do is make headings. there are six levels called <code>&lt;<span class="blue-fg">h1</span>></code> through <code>&lt;<span class="blue-fg">h6</span>></code>.</p>
+        <pre>&lt;<span class="blue-fg">h1</span>>how to html&lt;/<span class="blue-fg">h1</span>>
+&lt;<span class="blue-fg">h2</span>>Chapter 37.&lt;/<span class="blue-fg">h2</span>>
+<i class="green-fg">&lt;!-- etc --></i></pre>
+        <script>preview();</script>
         <script>renderMathInElement(document.body);</script>
     </body>
 </html>

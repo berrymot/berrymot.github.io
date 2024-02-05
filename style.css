@@ -219,6 +219,9 @@ h1 {
     color: var(--h-fg);
     text-align: center;
 }
+.u {
+    text-decoration: underline;
+}
 a {
     color: var(--h-fg);
 }
