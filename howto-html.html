@@ -20,10 +20,8 @@
         </script>
         <a href="index.html" id="back">back</a>
         <h1>how to html</h1>
-        <h2>document structure</h2>
         <p>here's the minimal requirement for a page:</p>
-        <pre>
-&lt;!<span class="blue-fg">DOCTYPE</span> <span class="h-fg">html</span>>
+        <pre>&lt;!<span class="blue-fg">DOCTYPE</span> <span class="h-fg">html</span>>
 &lt;<span class="blue-fg">html</span> <span class="h-fg">lang</span>=<span class="orange-fg">"en"</span>>
     &lt;<span class="blue-fg">head</span>>
         &lt;<span class="blue-fg">meta</span> <span class="h-fg">charset</span>=<span class="orange-fg">"utf-8"</span> />
@@ -48,10 +46,17 @@
                     <li><code>&lt;<span class="blue-fg">title</span>></code> gets put in the tab label - you'll notice <i>not</i> on the page itself.</li>
                 </ul>
             </li>
-            <li><code>&lt;<span class="blue-fg">body</span>></code>'s where you put the actual Stuff on the page!</li>
+            <li><code>&lt;<span class="blue-fg">body</span>></code>'s where you put the actual Stuff on the page! you only ever have on of these.</li>
             <li><code><i class="green-fg">&lt;!-- ... --></i></code> wraps comments. these are just for you, they don't get put on the page.</li>
         </ul>
         <p>you <i>technically</i> don't need to explicitly mark <code>&lt;html></code> or <code>&lt;head></code> or <code>&lt;body></code>, the browser will do it for you, but it's a good idea to anyway.</p>
+        <p>now let's add actually Useful stuff.</p>
+        <p>like paragraphs! those are fun. to make a paragraph, wrap it in a <code>&lt;<span class="blue-fg">p</span>>...&lt;/<span class="blue-fg">p</span>></code>.</p>
+        <pre>&lt;<span class="blue-fg">body</span>>
+    &lt;<span class="blue-fg">p</span>>wheeeee im a paragraph&lt;/<span class="blue-fg">p</span>>
+    &lt;<span class="blue-fg">p</span>>so am i! :3&lt;/<span class="blue-fg">p</span>>
+&lt;/<span class="blue-fg">body</span>></pre>
+        <script>preview();</script>
         <script>renderMathInElement(document.body);</script>
     </body>
 </html>
