@@ -18,6 +18,7 @@
                 document.body.append(iframe);
             }
         </script>
+        <a href="index.html" id="back">back</a>
         <h1>how to html</h1>
         <h2>document structure</h2>
         <p>here's the minimal requirement for a page:</p>
@@ -36,8 +37,20 @@
         <p>you can save this to a file ending in <code>.html</code> if you want. if you then open it in a browser you'll see...</p>
         <script>preview();</script>
         <p>...oh that's not very much. here's what this does:</p>
-        <p class="red">todo: explain</p>
-        <!-- the -->
+        <ul>
+            <li><code>&lt;!<span class="blue-fg">DOCTYPE</span> <span class="h-fg">html</span>></code> is the <i>doctype</i>. it tells the browser this is html5, not some other version like 4.1, and magically prevents quirks in browsers.</li>
+            <li><code>&lt;<span class="blue-fg">html</span>></code> wraps the page. you might notice the <code>&lt;/<span class="blue-fg">html</span>></code> later: that's the end. the additional <code>/</code> to mark the end of something is the general pattern.</li>
+            <li>
+                <code>&lt;<span class="blue-fg">head</span>></code> contains information about the page:
+                <ul>
+                    <li><code>&lt;<span class="blue-fg">meta</span> <span class="h-fg">charset</span>=<span class="orange-fg">"utf-8"</span> /></code> tells it to use unicode, because for some reason that still isn't the default. here the slash being at the <i>end</i> means it doesn't have any content or closing tag - there's no such thing as <code>&lt;/<span class="blue-fg">meta</span>></code>.</li>
+                    <li>the <code><span class="orange-fg">"viewport"</span></code> <code>&lt;<span class="blue-fg">meta</span> /></code> makes it not super tiny on phones etc.</li>
+                    <li><code>&lt;<span class="blue-fg">title</span>></code> gets put in the tab label - you'll notice <i>not</i> on the page itself.</li>
+                </ul>
+            </li>
+            <li><code>&lt;<span class="blue-fg">body</span>></code>'s where you put the actual Stuff on the page!</li>
+            <li><code><i class="green-fg">&lt;!-- ... --></i></code> wraps comments. these are just for you, they don't get put on the page.</li>
+        </ul>
         <p>you <i>technically</i> don't need to explicitly mark <code>&lt;html></code> or <code>&lt;head></code> or <code>&lt;body></code>, the browser will do it for you, but it's a good idea to anyway.</p>
         <script>renderMathInElement(document.body);</script>
     </body>
